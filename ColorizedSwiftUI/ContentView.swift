@@ -7,12 +7,6 @@
 
 import SwiftUI
 
-enum SliderColor {
-    case red
-    case green
-    case blue
-}
-
 struct ContentView: View {
     @State private var redSliderValue = 0.0
     @State private var greenSliderValue = 125.0
@@ -21,13 +15,12 @@ struct ContentView: View {
     @State private var redColorTF = ""
     @State private var greenColorTF = ""
     @State private var blueColorTF = ""
-    
-
+        
     var body: some View {
         ZStack {
             Color(.systemGray)
                 .ignoresSafeArea()
-            VStack {
+            VStack(spacing: 8) {
                 Rectangle()
                     .frame(width: 300, height: 150)
                     .cornerRadius(25)
@@ -40,20 +33,13 @@ struct ContentView: View {
                         )
                     )
                 
-                SliderView(sliderValue: $redSliderValue, sliderColor: .red, text: $redColorTF)
-                SliderView(sliderValue: $greenSliderValue, sliderColor: .green, text: $greenColorTF)
-                SliderView(sliderValue: $blueSliderValue, sliderColor: .blue, text: $blueColorTF)
+                SliderView(sliderValue: $redSliderValue, textField: $redColorTF, sliderColor: .red)
+                SliderView(sliderValue: $greenSliderValue, textField: $greenColorTF, sliderColor: .green)
+                SliderView(sliderValue: $blueSliderValue, textField: $blueColorTF, sliderColor: .blue)
                 
                 Spacer()
             }
-            .padding(EdgeInsets(top: 8, leading: 16, bottom: 8, trailing: 16))
-            .toolbar {
-                ToolbarItemGroup(placement: .keyboard) {
-                    Spacer()
-                    
-                    Button("Done", action: {})
-                }
-            }
+            .padding()
         }
     }
 }

@@ -17,12 +17,11 @@ struct ContentView: View {
     @State private var redSliderValue = 0.0
     @State private var greenSliderValue = 125.0
     @State private var blueSliderValue = 255.0
-
+    
     @State private var redColorTF = ""
     @State private var greenColorTF = ""
     @State private var blueColorTF = ""
-
-
+    
 
     var body: some View {
         ZStack {
@@ -40,14 +39,21 @@ struct ContentView: View {
                             blue: blueSliderValue / 255
                         )
                     )
-
+                
                 SliderView(sliderValue: $redSliderValue, sliderColor: .red, text: $redColorTF)
                 SliderView(sliderValue: $greenSliderValue, sliderColor: .green, text: $greenColorTF)
                 SliderView(sliderValue: $blueSliderValue, sliderColor: .blue, text: $blueColorTF)
-
+                
                 Spacer()
             }
             .padding(EdgeInsets(top: 8, leading: 16, bottom: 8, trailing: 16))
+            .toolbar {
+                ToolbarItemGroup(placement: .keyboard) {
+                    Spacer()
+                    
+                    Button("Done", action: {})
+                }
+            }
         }
     }
 }

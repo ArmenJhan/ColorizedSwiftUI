@@ -13,15 +13,20 @@ struct SliderView: View {
     @Binding var text: String
     
     var body: some View {
+        let formatter = NumberFormatter()
+        
         HStack {
             Text("\(lround(sliderValue))")
                 .frame(width: 50, height: 20)
-            Slider(value: $sliderValue, in: 1...255, step: 1)
+            Slider(value: $sliderValue, in: 0...255, step: 1)
                 .accentColor(sliderColor)
-            TextField("0", text: $text)
+            TextField(text, value: $sliderValue, formatter: formatter)
                 .textFieldStyle(.roundedBorder)
                 .frame(width: 50, height: 20)
         }
     }
 }
+
+
+
 

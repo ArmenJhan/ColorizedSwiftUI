@@ -12,7 +12,6 @@
 		C062124C2947719100043537 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C062124B2947719100043537 /* Assets.xcassets */; };
 		C062124F2947719100043537 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C062124E2947719100043537 /* Preview Assets.xcassets */; };
 		C0F97F00294776300007E2FA /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F97EFF294776300007E2FA /* SliderView.swift */; };
-		C0F97F0229479C5C0007E2FA /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F97F0129479C5C0007E2FA /* TextFieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +21,6 @@
 		C062124B2947719100043537 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C062124E2947719100043537 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C0F97EFF294776300007E2FA /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
-		C0F97F0129479C5C0007E2FA /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +56,6 @@
 				C06212472947719000043537 /* ColorizedSwiftUIApp.swift */,
 				C06212492947719000043537 /* ContentView.swift */,
 				C0F97EFF294776300007E2FA /* SliderView.swift */,
-				C0F97F0129479C5C0007E2FA /* TextFieldView.swift */,
 				C062124B2947719100043537 /* Assets.xcassets */,
 				C062124D2947719100043537 /* Preview Content */,
 			);
@@ -145,7 +142,6 @@
 			files = (
 				C0F97F00294776300007E2FA /* SliderView.swift in Sources */,
 				C062124A2947719000043537 /* ContentView.swift in Sources */,
-				C0F97F0229479C5C0007E2FA /* TextFieldView.swift in Sources */,
 				C06212482947719000043537 /* ColorizedSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -26,3 +26,9 @@ struct SliderView: View {
         }
     }
 }
+
+struct SliderView_Previews: PreviewProvider {
+    static var previews: some View {
+        SliderView(sliderValue: .constant(0), textField: .constant(""), sliderColor: .blue)
+    }
+}

@@ -26,8 +26,3 @@ struct SliderView: View {
         }
     }
 }
-
-
-
-
-
